@@ -1,17 +1,10 @@
-
 public class Solution_42 {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] height = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
-		System.out.println(trap(height));
-	}
-
-	public static int trap(int[] height) {
-		if(height.length<=2)
+   public static int trap(int[] height) {
+        if(height.length<=2)
 			return 0;
 		int water = 0;
 		int leftMax = height[0], rightMax = height[height.length - 1];
-		int max[][] = new int[2][height.length];//第一行存储左边最大，第二行存储右边最大。用二者最小值减去height即可
+		int max[][] = new int[2][height.length];
 		max[0][0] = 0;
 		max[1][height.length - 1] = 0;
 		for (int i = 1; i < height.length; i++) {
