@@ -1,4 +1,7 @@
-public class Solution {
+import java.util.HashMap;
+import java.util.Map;
+
+public class Solution_3 {
   public static int lengthOfLongestSubstring(String s) {
 		int max = 0, begin = 0;
 		Map<Object, Integer> map = new HashMap<>();
