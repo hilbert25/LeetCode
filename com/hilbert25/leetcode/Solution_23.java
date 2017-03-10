@@ -28,6 +28,10 @@ public class Solution_23 {
 		}
 	}
 
+	/**链表合并
+	 * @param lists
+	 * @return
+	 */
 	public static ListNode mergeKLists(ListNode[] lists) {
 		if (lists.length == 0)
 			return null;
@@ -59,6 +63,11 @@ public class Solution_23 {
 		return resultList.next;
 	}
 
+	/** 初始化堆
+	 * @param lists
+	 * @param heapSize
+	 * @return
+	 */
 	public static ListNode[] initHeap(ListNode[] lists, int heapSize) {
 		for (int i = 0; i < lists.length; i++) {
 			if (lists[i] == null) {
@@ -78,6 +87,12 @@ public class Solution_23 {
 		return lists;
 	}
 
+	/**最小化堆
+	 * @param lists
+	 * @param l
+	 * @param heapSize
+	 * @return
+	 */
 	public static ListNode[] minHeap(ListNode[] lists, int l, int heapSize) {
 		int min = 0;
 		if (l * 2 + 1 > heapSize - 1) {
