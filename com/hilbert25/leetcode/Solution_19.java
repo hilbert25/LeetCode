@@ -1,6 +1,6 @@
 package com.hilbert25.leetcode;
 
-public class Soultion_19 {
+public class Solution_19 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

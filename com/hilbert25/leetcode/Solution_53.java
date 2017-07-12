@@ -11,14 +11,10 @@ public class Solution_53 {
 
 	}
 
-	public int maxSubArray(int[] nums) {
-		int max = nums[0];
-		int currentMax = nums[0];
-		int l = nums.length;
-		for (int i = 1; i < l; i++) {
-			currentMax = Math.max(nums[i], currentMax + nums[i]);
-			max = Math.max(max, currentMax);
-		}
-		return max;
+	public boolean canJump(int[] nums) {
+		int farthest = 0;
+		for (int i = 0; farthest >= i && farthest <= nums.length - 1; i++)
+			farthest = Math.max(farthest, i + nums[i]);
+		return farthest >= nums.length - 1;
 	}
 }
