@@ -1,3 +1,4 @@
+package com.hilbert25.leetcode;
 public class Solution_41 {
    public int firstMissingPositive(int[] nums) {
 		int[] record = new int[10000];

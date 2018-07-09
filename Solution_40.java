@@ -1,3 +1,9 @@
+package com.hilbert25.leetcode;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Solution_40 {
   public List<List<Integer>> combinationSum2(int[] candidates, int target) {
 		List<List<Integer>> list = new ArrayList<List<Integer>>();
